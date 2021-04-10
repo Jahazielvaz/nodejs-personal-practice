@@ -35,7 +35,10 @@ app.get('/api', urlEncoded, (req, res) => {
   res.json({user: 'KillerPuppy2000'});
 })
 
-
+app.post('/api/people', (req, res) => {
+  console.log(req.body);
+  res.send('Congratulations! Your data has been posted...')
+})
 
 
 
